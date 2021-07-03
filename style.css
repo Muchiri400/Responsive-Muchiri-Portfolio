@@ -111,7 +111,8 @@
       margin-bottom: var(--mb-3);
   }
   .section-subtitle{
-      display: block;
+      display: flex;
+      justify-content: center;
       font-size: var(--smaller-font-size);
       font-weight: var(--font-semi-bold);
   }
