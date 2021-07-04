@@ -565,6 +565,44 @@
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
 }
+.contact_form{
+    margin-bottom: 1rem;
+}
+#status.success{
+    display: flex;
+    justify-content: center;
+    background-color: #2F0A0D;
+    color: #fff;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: #dd0e1f;
+    color: #fff;
+    animation: status 4s ease forwards;
+
+}
+#status{
+    width: 90%;
+    text-align: center;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 
 .contact::placeholder{
     color: var(--first-color-light);
