@@ -566,7 +566,7 @@
     margin-bottom: var(--mb-1);
 }
 .contact_form{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 #status.success{
     display: flex;
