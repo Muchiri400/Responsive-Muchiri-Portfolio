@@ -287,6 +287,8 @@
 .home_social-icon:hover{
     color: var(--first-color-light);
 }
+
+
 /* Button */
 .button{
     display: inline-block;
@@ -318,6 +320,7 @@
 .button-link:hover{
     background: none;
 }
+
 
 /* About section */
 .about_data{
@@ -766,5 +769,58 @@
     .qualification_container{
         column-gap: 6rem;
     }
+    .home_img{
+        right: -80px;
+    }
+
+    /* Scroll down animation */
+    .scroll-down{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        height: 50px;
+        width: 30px;
+        border: 2px #fff solid;
+        border-radius: 50PX;
+        cursor: pointer;
+    }
+.scroll-down::before,
+.scroll-down::after{
+    content:'';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid rgb(112, 20, 20);
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%,-100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+
+/* Key frames for the scroll button */
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
 
 }
