@@ -769,9 +769,11 @@
     .qualification_container{
         column-gap: 6rem;
     }
-    .home_img{
-        right: -80px;
+    .home_img img{
+       position: relative;
+       left: 100px;
     }
+    
 
     /* Scroll down animation */
     .scroll-down{
