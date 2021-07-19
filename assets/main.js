@@ -126,27 +126,6 @@ window.addEventListener("DOMContentLoaded", function () {
     xhr.send(data);
   }
 
-/* swiper carousel */
-const mySwiper = new Swiper('.testimonial_container', {
-    spaceBetween: 16,
-    loop: true,
-    grabCursor: true,
-  
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints:{
-        640:{
-            slidesPerView:2,
-        },
-        1024:{
-            slidesPerView:3,
-        },
-    }
-  
-  });
-
   /* gsap animation */
   gsap.from('.home_img', {opacity: 0, duration: 2, delay:.5, x:60})
   gsap.from('.home_data', {opacity: 0, duration: 2, delay:.8, y:25})
