@@ -154,7 +154,7 @@ const mySwiper = new Swiper('.testimonial_container', {
   gsap.from('.nav_logo, .nav_toggle', {opacity: 0, duration: 2, delay:1.5, y:25, ease:'expo.out', stagger:.2})
   gsap.from('.nav_item', {opacity: 0, duration: 2, delay:1.8, y:25, ease:'expo.out', stagger:.2})
   gsap.from('.home_social-icon', {opacity: 0, duration: 2, delay:1.8, y:25, ease:'expo.out', stagger:.2})
-  gsap.from(".about_img", {scrollTrigger: ".about_img", opacity:0, duration: 2, delay:.5, x: 80});
+  gsap.from(".skill-sec", {scrollTrigger: ".skill-sec", opacity:0, duration: 2, delay:.5, x: 80});
   gsap.from(".about_data", {scrollTrigger: ".about_data, .about_description, .about_number, .about_achievement", opacity:0, duration: 1, delay:.5, y: 25});
 
 
