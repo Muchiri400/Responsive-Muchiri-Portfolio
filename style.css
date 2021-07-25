@@ -302,7 +302,7 @@ img {
 }
 .home_img img {
     width: 240px;
-    animation: move 1.4s infinite ease-in-out alternate;
+    animation: move 2s infinite ease-in-out alternate;
 }
 /* Hero image hover effect */
 @keyframes move{
